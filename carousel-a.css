@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container-a {
+    border: 2px solid #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper-a {
+    display: flex;
+    position: relative;
+}
+
+.carousel-a {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+img {
+    width: 50%; /* Adjust to control the size of each image */
+    height: auto;
+}
+
+.prev-a,
+.next-a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-a {
+    left: 10;
+}
+
+.next-a {
+    right: 10;
+}

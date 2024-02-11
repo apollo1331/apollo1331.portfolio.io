@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container-b {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper-b {
+    display: flex;
+    position: relative;
+}
+
+.carousel-b {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+img {
+    width: 50%; /* Adjust to control the size of each image */
+    height: auto;
+}
+
+.prev-b,
+.next-b {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-b {
+    left: 10;
+}
+
+.next-b {
+    right: 10;
+}

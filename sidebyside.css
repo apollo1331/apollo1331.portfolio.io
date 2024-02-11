@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust as needed */
+}
+
+.content-container {
+    border-top: 2px solid #333; 
+    border-bottom: 2px solid #333;
+    display: flex;
+    overflow: hidden; /* Hide overflow to prevent border on images from causing extra spacing */
+}
+
+.image-container,
+.text-container {
+    flex: 1; /* Take up equal space within the content container */
+    padding: 20px; /* Adjust as needed */
+}
+
+.image-container img {
+    width: 100%; /* Set the width to 100% to make it responsive */
+    max-width: 500px; /* Set the maximum width for responsiveness */
+    height: auto;
+}
+
+.text-container h2 {
+    color: #333;
+}
+
+.text-container p {
+    color: #666;
+}
